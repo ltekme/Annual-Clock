@@ -10,12 +10,13 @@ const Prog24 = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             setT(new Date());
+            
         }, 1000);
         return () => clearInterval(timer);
     }, []);
 
     let d = (Math.abs(e - t)/1e3/60/60/24/365)*100;
-
+    document.title = `2024 is ${Math.floor(d).toFixed(0)}% complete`;
     return (
         <div className='progress2024'>  
         <div>
@@ -26,7 +27,7 @@ const Prog24 = () => {
                 </tr>
                 <tr>
                     <td><p>Time</p></td>
-                    <td><p>&nbsp;<span style={{color: '#ffa500'}}>{t.getHours()}:{t.getMinutes()}:{t.getSeconds()}</span></p></td>
+                    <td><p>&nbsp;<span style={{color: '#ffa500'}}>{t.getHours().toString().padStart(2, '0')}:{t.getMinutes().toString().padStart(2, '0')}:{t.getSeconds().toString().padStart(2, '0')}</span></p></td>
                 </tr>
             </table>
             <table>
