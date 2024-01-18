@@ -23,7 +23,6 @@ const Prog24 = () => {
                 <tr>
                     <td><p>Today is</p></td>
                     <td><p>&nbsp;<span style={{color: '#ffa500'}}>{t.toDateString()}</span></p></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td><p>Time</p></td>
