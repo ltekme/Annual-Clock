@@ -38,6 +38,15 @@ body {
 }
 .footer a {
 text-decoration: none;
+display: inline;
+justify-content: space-around;
+}
+.footer ul, .footer ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin:0;
 }
 .footer a:hover,.footer a > span{
     color: var(--fnt-org);
@@ -67,7 +76,12 @@ text-decoration: none;
     <div class="center" id="root">
     </div>
     <div class="bottom">
-        <div class="footer"><a href = "mailto: karl@ltek.me">karl @&nbsp;<span>ltek.me<span></a></div>
+        <div class="footer">
+            <ul>
+                <li><a href = "mailto: karl@ltek.me">karl @&nbsp;<span>ltek.me<span></a></li>
+                <li><a href="https://github.com/ltek0/2024counter">Github</a></li>
+            </ul>            
+        </div>
     </div>
     </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
