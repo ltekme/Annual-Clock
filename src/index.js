@@ -37,7 +37,7 @@ const Prog24 = () => {
                     </td>
                 </tr>
                 <tr>
-                    <td colSpan={2}><p>2024 is <span style={{color: '#ffa500'}}>{d.toFixed(3)}%</span> complete</p></td>
+                    <td colSpan={2}><p>2024 is <span style={{color: '#ffa500'}}>{Math.floor(d).toFixed(0)}%</span> complete</p></td>
                 </tr>
             </table>
         </div>
