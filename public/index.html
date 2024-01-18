@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Ltek.me" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/ico/favicon-16x16.png">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/normalize.css">
+    <title>Ltek.me | Karlcch</title>
+    <style>
+        .footer {
+    background-color:  rgb(5, 5, 30);
+    color: #fff;
+}
+:root {
+    --fnt-org: rgb(219, 143, 2);
+}
+body {
+    background-color: #07041b;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.footer {
+    border-top: var(--fnt-org) .1vh solid;
+    padding: 1em;
+}
+.footer a {
+text-decoration: none;
+}
+.footer a:hover,.footer a > span{
+    color: var(--fnt-org);
+}
+.footer a:hover > span, .footer a{
+    color: #fff;
+}
+.rootContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.bottom {
+    margin-top: auto;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+    </style>
+</head>
+
+<body>
+    <div class="rootContainer">
+    <div class="top" id="banner"></div>
+    <div class="center" id="root">
+    </div>
+    <div class="bottom">
+        <div class="footer"><a href = "mailto: karl@ltek.me">karl @&nbsp;<span>ltek.me<span></a></div>
+    </div>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+</body>
+
+</html>
