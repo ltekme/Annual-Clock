@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #db8f02;
+  --color-background: #07041b;
+  --color-text: #fefefe;
+  --color-bannerShado: rgba(90, 90, 90, 0.75);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

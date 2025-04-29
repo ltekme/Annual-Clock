@@ -1,0 +1,1 @@
+export const domainName = process.env.NEXT_PUBLIC_DOMAIN_NAME || '';
